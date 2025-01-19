@@ -1,3 +1,4 @@
+/* Typography */
 body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
@@ -8,6 +9,20 @@ body {
     padding: 1rem;
   }
 
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* Image */
 img {
     max-width: 200px;
     height: auto;
@@ -84,15 +99,25 @@ article {
   gap: 1rem;
 }
 
-h1 {
-  font-size: 400%;
+/* Resume */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
 }
 
-h2 {
-  margin: 0;
+section {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  text-wrap: balance;
+time {
+  display: block;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
 }
