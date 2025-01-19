@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Contact</h1>
-    <p>Welcome to contact me!</p>
     <nav>
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
         <a href="../resume/index.html">Resume</a>
-        <a href="../contact/index.html">Contact</a>
+        <a class="current"  href="../contact/index.html">Contact</a>
         <a href="https://github.com/ZhenhanHu" target="_blank">GitHub</a>
     </nav>
+    <h1>Contact</h1>
+    <p>Welcome to contact me!</p>
     <form action="mailto:zhh039@ucsd.edu" method="POST" enctype="text/plain">
-        <label>Email:</label>
-        <input name="email" type="email">
-
-        <label>Subject:</label>
-        <input name="subject">
-
-        <label>Body:</label>
-        <textarea name="body"></textarea>
-        
-        <button>submit</button>
+        <label for="email">Email:</label>
+        <input name="email" type="email" id="email">
+        <label for="subject">Subject:</label>
+        <input name="subject" type="text" id="subject">
+        <label for="body">Message:</label>
+        <textarea name="body" id="body"></textarea>
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
