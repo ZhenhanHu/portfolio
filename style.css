@@ -62,10 +62,16 @@ a:hover {
 
 /* Color Scheme */
 .color-scheme {
-  /* position: absolute; */
+  position: absolute;
+  display: flex;
   top: 1rem;
   right: 1rem;
   font-family: inherit;
+}
+
+.color-scheme select {
+  margin-left: 0.4rem;
+  padding: 0.2rem;
 }
 
 /* Image */
@@ -79,7 +85,7 @@ img {
 label, input, textarea, button {
   font: inherit;
   display: block;
-  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
 }
 
