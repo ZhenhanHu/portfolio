@@ -4,12 +4,16 @@ function $$(selector, context = document) {
     return Array.from(context.querySelectorAll(selector));
 }
 
-const nav = document.createElement('nav');
+const IS_LOCALHOST = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const BASE_PATH = IS_LOCALHOST ? "/" : "/portfolio/";
+document.write(`<base href="${BASE_PATH}">`);
+
+let nav = document.createElement('nav');
 document.body.prepend(nav); 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 // All pages
-const pages = [
+let pages = [
     { url: '', title: 'Home' },
     { url: 'projects/', title: 'Projects' },
     { url: 'resume/', title: 'Resume' },
