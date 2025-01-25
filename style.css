@@ -62,10 +62,9 @@ a:hover {
 
 /* Color Scheme */
 .color-scheme {
-  position: absolute;
+  /* position: absolute; */
   top: 1rem;
   right: 1rem;
-  font-size: 0.8rem;
   font-family: inherit;
 }
 
