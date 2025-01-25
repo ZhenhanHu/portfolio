@@ -5,13 +5,21 @@ function $$(selector, context = document) {
 }
 
 // All pages
+const base = document.querySelector('base')?.getAttribute('href') || '/';
 const pages = [
-    { url: '', title: 'Home' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'resume/', title: 'Resume' },
-    { url: 'contact/', title: 'Contact' },
+    { url: base, title: 'Home' },
+    { url: `${base}projects/`, title: 'Projects' },
+    { url: `${base}resume/`, title: 'Resume' },
+    { url: `${base}contact/`, title: 'Contact' },
     { url: 'https://github.com/ZhenhanHu', title: 'GitHub' }
 ];
+// const pages = [
+//     { url: '', title: 'Home' },
+//     { url: 'projects/', title: 'Projects' },
+//     { url: 'resume/', title: 'Resume' },
+//     { url: 'contact/', title: 'Contact' },
+//     { url: 'https://github.com/ZhenhanHu', title: 'GitHub' }
+// ];
 
 const nav = document.createElement('nav');
 document.body.prepend(nav); 
