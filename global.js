@@ -4,27 +4,18 @@ function $$(selector, context = document) {
     return Array.from(context.querySelectorAll(selector));
 }
 
-// All pages
-// const pages = [
-//     { url: '', title: 'Home' },
-//     { url: 'projects/', title: 'Projects' },
-//     { url: 'resume/', title: 'Resume' },
-//     { url: 'contact/', title: 'Contact' },
-//     { url: 'https://github.com/ZhenhanHu', title: 'GitHub' }
-// ];
-const BASE_PATH = '/portfolio/'; // Adjust this to your repository name
-
-const pages = [
-    { url: `${BASE_PATH}`, title: 'Home' },
-    { url: `${BASE_PATH}projects/`, title: 'Projects' },
-    { url: `${BASE_PATH}resume/`, title: 'Resume' },
-    { url: `${BASE_PATH}contact/`, title: 'Contact' },
-    { url: 'https://github.com/ZhenhanHu', title: 'GitHub' }
-];
-
-
 const nav = document.createElement('nav');
 document.body.prepend(nav); 
+const ARE_WE_HOME = document.documentElement.classList.contains('home');
+
+// All pages
+const pages = [
+    { url: '', title: 'Home' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'resume/', title: 'Resume' },
+    { url: 'contact/', title: 'Contact' },
+    { url: 'https://github.com/ZhenhanHu', title: 'GitHub' }
+];
 
 for (let p of pages) {
     let url = p.url;
