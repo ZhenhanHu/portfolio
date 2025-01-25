@@ -1,20 +1,21 @@
+:root {
+  --color-accent: oklch(65% 50% 0);
+}
+
 /* Typography */
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     padding: 1rem;
-  }
+}
+
+html {
+  color-scheme: light dark;
+}
 
 h1 {
   font-size: 400%;
-}
-
-h2 {
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,15 +23,9 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/* Image */
-img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
 /* Navigation Bar */
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
@@ -42,20 +37,43 @@ nav a {
   text-align: center;
   padding: 0.5em;
   margin-bottom: 0.5em;
-  border-bottom: 1px solid oklch(80% 3% 200);
-}
-
-:root {
-  --color-accent: oklch(65% 50% 0);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a.current {
-  border-bottom: 0.4em solid var(--color-accent);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.1em;
 }
 
 nav a:hover {
-  border-bottom: 0.2em solid var(--color-accent);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+  border-bottom: 0.2em solid var(--border-color);
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Color Scheme */
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+}
+
+/* Image */
+img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Contact Form */
@@ -112,7 +130,8 @@ section {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: canvas;
+  color: canvastext;
 }
 
 time {
