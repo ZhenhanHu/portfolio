@@ -82,10 +82,10 @@ img {
 }
 
 /* Contact Form */
-label, input, textarea, button {
+input, textarea, button {
   font: inherit;
   display: block;
-  /* width: 100%; */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -124,8 +124,7 @@ article {
 
 /* Resume */
 main {
-  max-width: 800px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem;
   display: grid;
   gap: 2rem;
@@ -135,8 +134,7 @@ section {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: canvas;
-  color: canvastext;
+  background-color: #f9f9f9;
 }
 
 time {

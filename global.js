@@ -75,13 +75,6 @@ if (localStorage.colorScheme) {
     select.value = localStorage.colorScheme;
 }
 
-// select.addEventListener('input', (event) => {
-//     const selectedScheme = event.target.value;
-//     localStorage.colorScheme = selectedScheme;
-//     document.documentElement.style.setProperty('color-scheme', event.target.value);
-//     console.log('Color scheme changed to', event.target.value);
-// });
-
 // Current Page
 const navLinks = $$('nav a');
 const currentLink = navLinks.find(
