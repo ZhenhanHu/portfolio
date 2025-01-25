@@ -81,3 +81,24 @@ const currentLink = navLinks.find(
     (a) => a.host === location.host && a.pathname === location.pathname
 );
 currentLink?.classList.add('current');
+
+// Mailto Form
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const params = new URLSearchParams();
+
+    for (let [name, value] of data) {
+        params.append(name, encodeURIComponent(value));
+    }
+
+    const email = form.action;
+    const subject = params.get('subject');
+    const body = params.get('body');
+
+    const mailtoURL = `${email}?subject=${subject}&body=${body}`;
+    location.href = mailtoURL;
+});

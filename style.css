@@ -1,5 +1,6 @@
 :root {
   --color-accent: oklch(65% 50% 0);
+  --border-color: oklch(50% 10% 200 / 40%);
 }
 
 /* Typography */
@@ -25,10 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation Bar */
 nav {
-  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  gap: 1rem;
+  flex-wrap: wrap; /* Handle small screens */
 }
 
 nav a {
@@ -54,10 +56,6 @@ nav a:hover {
 a {
   color: var(--color-accent);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Color Scheme */
@@ -134,7 +132,8 @@ section {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: canvas;
+  color: canvastext;
 }
 
 time {
