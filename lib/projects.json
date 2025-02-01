@@ -2,19 +2,19 @@
     {
         "title": "MusicXML Song Complexity Prediction",
         "year": "Nov 2024 - Dec 2024",
-        "image": "../images/MusicXML.png",
+        "image": "https://zhenhanhu.github.io/portfolio/images/MusicXML.png",
         "description": "Implemented Logistic Regression and Decision Tree models that achieved 86.38% accuracy on validation sets. Summarized results in a comprehensive 11-page, 2-column report."
     },
     {
         "title": "Goodreads Book Recommender",
         "year": "Oct 2024 - Nov 2024",
-        "image": "../images/Goodreads.png",
+        "image": "https://zhenhanhu.github.io/portfolio/images/Goodreads.png",
         "description": "Personalized book recommendation system for Goodreads users, a Cornac BPR model was optimized with latent factor tuning and regularization, ranking 16th out of 711 competitors on private leaderboard."
     },
     {
         "title": "Food.com Recipe Analysis",
         "year": "Aug 2024 - Sept 2024",
-        "image": "../images/Food_com.png",
+        "image": "https://zhenhanhu.github.io/portfolio/images/Food_com.png",
         "description": "Analyzed the relationship between recipe ratings and attributes such as preparation time, ingredients, and steps using multiple linear regression and ridge regression."
     },
     {
