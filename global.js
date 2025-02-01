@@ -6,10 +6,10 @@ function $$(selector, context = document) {
 
 const IS_LOCALHOST = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 const BASE_PATH = IS_LOCALHOST ? "/" : "/portfolio/";
-// document.write(`<base href="${BASE_PATH}">`);
-let base = document.createElement('base');
-base.href = BASE_PATH;
-document.head.appendChild(base);
+document.write(`<base href="${BASE_PATH}">`);
+// let base = document.createElement('base');
+// base.href = BASE_PATH;
+// document.head.appendChild(base);
 
 let nav = document.createElement('nav');
 document.body.prepend(nav); 

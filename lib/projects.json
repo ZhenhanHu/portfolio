@@ -14,7 +14,7 @@
     {
         "title": "Food.com Recipe Analysis",
         "year": "Aug 2024 - Sept 2024",
-        "image": "../images/Food_dot.png",
+        "image": "../images/Food_com.png",
         "description": "Analyzed the relationship between recipe ratings and attributes such as preparation time, ingredients, and steps using multiple linear regression and ridge regression."
     },
     {
