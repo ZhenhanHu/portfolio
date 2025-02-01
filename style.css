@@ -19,6 +19,11 @@ h1 {
   font-size: 400%;
 }
 
+h2 {
+  font-size: 200%;
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
@@ -30,7 +35,7 @@ nav {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   gap: 1rem;
-  flex-wrap: wrap; /* Handle small screens */
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -116,8 +121,8 @@ button {
 article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
-  gap: 1rem;
+  grid-row: span 4;
+  gap: 0.1rem;
 }
 
 /* Resume */
@@ -141,4 +146,33 @@ time {
   font-style: italic;
   color: #555;
   margin-top: 0.5rem;
+}
+
+/* GitHub Stats */
+#profile-stats {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #949494;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: bold;
 }
