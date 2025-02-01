@@ -4,7 +4,13 @@ import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 const projects = await fetchJSON('./lib/projects.json');
 const latestProjects = projects.slice(0, 4);
 const projectsContainer = document.querySelector('.projects');
-renderProjects(latestProjects, projectsContainer, 'h3');
+
+// check projects
+if (latestProjects.length === 0) {
+    projectsContainer.innerHTML = "<p>No projects available at the moment.</p>";
+} else {
+    renderProjects(latestProjects, projectsContainer, 'h3');
+}
 
 const githubData = await fetchGitHubData('zhenhanhu');
 console.log(githubData);

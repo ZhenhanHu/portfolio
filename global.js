@@ -4,10 +4,6 @@ function $$(selector, context = document) {
     return Array.from(context.querySelectorAll(selector));
 }
 
-// const IS_LOCALHOST = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-// const BASE_PATH = IS_LOCALHOST ? "/" : "/portfolio/";
-// document.write(`<base href="${BASE_PATH}">`);
-
 // All pages
 let pages = [
     { url: '', title: 'Home' },
@@ -32,10 +28,6 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
 
-    // // Current page detection
-    // if (a.host === location.host && a.pathname === location.pathname) {
-    //     a.classList.add('current');
-    // }
     a.classList.toggle(
         'current',
         a.host === location.host && a.pathname === location.pathname
@@ -76,13 +68,6 @@ if (localStorage.colorScheme) {
     setColorScheme(localStorage.colorScheme);
     select.value = localStorage.colorScheme;
 }
-
-// // Current Page
-// const navLinks = $$('nav a');
-// const currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname
-// );
-// currentLink?.classList.add('current');
 
 // Mailto Form
 const form = document.querySelector('form');
