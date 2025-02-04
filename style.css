@@ -175,3 +175,60 @@ time {
   font-size: 36px;
   font-weight: bold;
 }
+
+/* Visualizations and Legend */
+.vis-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+svg {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+svg:has(path:hover) {
+  path:not(:hover) {
+    opacity: 50%;
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  padding: 1em;
+  border: 1px solid #ebc0c0;
+  border-radius: 8px;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--color);
+}
+
+.legend .swatch {
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  display: inline-block;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
