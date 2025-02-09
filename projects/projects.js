@@ -124,5 +124,9 @@ document.querySelector(".searchBar").addEventListener("input", (event) => {
     updateProjectCount(filteredProjects.length);
 
     let newData = recalculate(filteredProjects);
-    updatePieChart(newData, filteredProjects);
+    // updatePieChart(newData, filteredProjects); //correct, with search property preserved
+    updatePieChart(newData, projects); //incorrect, without search property preserved
+    // Reason: searching updates the pie chart, but keeps all projects instead of filteredProjects
+    // If I type in a query and then select a slice, the search filter will be ignored,
+    // and clicking a pie slice will reset the display to show projects only filtered by year
 });
