@@ -233,3 +233,8 @@ path {
   border-radius: 50%;
   flex-shrink: 0;
 }
+
+.gridlines line {
+  stroke: #ddd;
+  stroke-opacity: 0.7;
+}
