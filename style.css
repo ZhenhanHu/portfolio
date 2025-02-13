@@ -147,7 +147,7 @@ time {
   margin-top: 0.5rem;
 }
 
-/* GitHub Stats */
+/* GitHub and Meta Stats */
 #profile-stats {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -159,6 +159,7 @@ time {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .stat-label {
