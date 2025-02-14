@@ -158,8 +158,17 @@ time {
 .stats-container {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   text-align: center;
   flex-wrap: wrap;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .stat-label {
@@ -237,4 +246,63 @@ path {
 .gridlines line {
   stroke: #ddd;
   stroke-opacity: 0.7;
+}
+
+/* Dots */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+/* Dot Selection */
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+/* Tooltip styling */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 8px;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+
+#selection-count {
+  text-align: left;
+  font-size: 150%;
 }
