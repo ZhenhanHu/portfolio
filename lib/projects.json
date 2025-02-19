@@ -1,33 +1,51 @@
 [
     {
-        "title": "MusicXML Song Complexity Prediction",
+        "title": "CSE 190D: Mitigating Bias in Machine Learning",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Implemented fairness interventions through massaging, reweighting, and post-processing techniques and achieved equalized performance metrics (TPR/FPR) across sensitive groups."
+    },
+    {
+        "title": "CSE 156: Fine-Tuning RoBERTa for Sentiment Analysis on SST-2",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Implemented custom PyTorch class for preprocessing and batch text, and developed a sentiment analysis pipeline using the pre-trained RoBERTa-base transformer, fine-tuning on the SST-2 dataset."
+    },
+    {
+        "title": "DSC 106: Data Visualization of Male Mice Thermal Regulation",
+        "year": "2025",
+        "image": "https://zhenhanhu.github.io/portfolio/images/earnest.png",
+        "description": "Designed visualizations to analyze half-daily and bi-hourly temperature fluctuations in male mice over 13 days, illustrating the effects of light-on and light-off conditions."
+    },
+    {
+        "title": "CSE 158R: MusicXML Song Complexity Prediction",
         "year": "2024",
         "image": "https://zhenhanhu.github.io/portfolio/images/MusicXML.png",
         "description": "Implemented Logistic Regression and Decision Tree models that achieved 86.38% accuracy on validation sets. Summarized results in a comprehensive 11-page, 2-column report."
     },
     {
-        "title": "Goodreads Book Recommender",
+        "title": "CSE 158R: Goodreads Book Recommender",
         "year": "2024",
         "image": "https://zhenhanhu.github.io/portfolio/images/Goodreads.png",
-        "description": "Personalized book recommendation system for Goodreads users, a Cornac BPR model was optimized with latent factor tuning and regularization, ranking 16th out of 711 competitors on private leaderboard."
+        "description": "Personalized recommendation system for Goodreads, Cornac BPR model was optimized with latent factor tuning and regularization, ranking 16th out of 711 competitors on leaderboard."
     },
     {
-        "title": "Food.com Recipe Analysis",
+        "title": "COGS 108: Steam Games Ratings Prediction",
+        "year": "2024",
+        "image": "https://zhenhanhu.github.io/portfolio/images/Steam.png",
+        "description": "Integrated Steam and IGN Games datasets to predict game ratings. Developed and evaluated OLS regression models to determine features' contribution."
+    },
+    {
+        "title": "DSC 80: Food.com Recipe Analysis",
         "year": "2024",
         "image": "https://zhenhanhu.github.io/portfolio/images/Food_com.png",
         "description": "Analyzed the relationship between recipe ratings and attributes such as preparation time, ingredients, and steps using multiple linear regression and ridge regression."
     },
     {
-        "title": "Lorem4",
+        "title": "CSE 151A: Rice Classification",
         "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "Lorem4",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "image": "https://zhenhanhu.github.io/portfolio/images/rice.png",
+        "description": "Classified 75,000 rice images using pairwise logistic regressions and artificial neural network with optimized layers and activation functions."
     },
     {
         "title": "Lorem4",
