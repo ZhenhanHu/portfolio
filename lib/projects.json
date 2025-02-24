@@ -1,15 +1,21 @@
 [
     {
+        "title": "DSC 106: Interactive Map Visualization for Bluebikes Data",
+        "year": "2025",
+        "image": "https://zhenhanhu.github.io/portfolio/images/bikewatching.png",
+        "description": "Developed an interactive Mapbox visualization to display real-time bike station traffic using D3.js and JavaScript."
+    },
+    {
         "title": "CSE 190D: Mitigating Bias in Machine Learning",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Implemented fairness interventions through massaging, reweighting, and post-processing techniques and achieved equalized performance metrics (TPR/FPR) across sensitive groups."
+        "image": "https://zhenhanhu.github.io/portfolio/images/reweighting.png",
+        "description": "Implemented fairness interventions through massaging, reweighting, and post-processing; achieved equalized TPR/FPR across gender biased groups."
     },
     {
         "title": "CSE 156: Fine-Tuning RoBERTa for Sentiment Analysis on SST-2",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Implemented custom PyTorch class for preprocessing and batch text, and developed a sentiment analysis pipeline using the pre-trained RoBERTa-base transformer, fine-tuning on the SST-2 dataset."
+        "image": "https://zhenhanhu.github.io/portfolio/images/sst2.png",
+        "description": "Implemented custom PyTorch class for preprocessing and batch text; developed sentiment analysis pipeline using pre-trained RoBERTa-base transformer, fine-tuning on SST-2 dataset."
     },
     {
         "title": "DSC 106: Data Visualization of Male Mice Thermal Regulation",
@@ -48,45 +54,21 @@
         "description": "Classified 75,000 rice images using pairwise logistic regressions and artificial neural network with optimized layers and activation functions."
     },
     {
-        "title": "Lorem4",
+        "title": "MATH 173A: SVM with Gradient Descent",
         "year": "2023",
+        "image": "https://zhenhanhu.github.io/portfolio/images/svm.png",
+        "description": "Developed a custom SVM classifier from scratch to separate clusters; implemented hinge loss gradient computation for optimization and SGD for classification error minimization."
+    },
+    {
+        "title": "Lorem4",
+        "year": "unknown",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "title": "Lorem4",
-        "year": "2021",
+        "year": "unknown",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "Lorem4",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "model2022",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "MODEL2021",
-        "year": "2021",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "Lorem4",
-        "year": "1453",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "MoDeL2021-2 ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "title": "Lorem4",
-        "year": "114514",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Model2021-1 ipsum dolor sit amet, consectetur adipiscing elit."
     }
 ]
